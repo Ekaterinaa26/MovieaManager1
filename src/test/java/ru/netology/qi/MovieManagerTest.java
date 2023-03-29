@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class MovieManagerTest {
     @Test
     public void ListOllMoviesInTheOrderTheyWereAdded() {
-        MovieManager manager = new MovieManager();
+        ru.netology.qi.MovieManager manager = new ru.netology.qi.MovieManager();
         manager.add("Film 1");
         manager.add("Film 2");
         manager.add("Film 3");
@@ -21,7 +21,7 @@ public class MovieManagerTest {
 
     @Test
     public void WhenQuantityEquaLimit() {
-        MovieManager manager = new MovieManager();
+        ru.netology.qi.MovieManager manager = new ru.netology.qi.MovieManager();
         manager.add("Film 1");
         manager.add("Film 2");
         manager.add("Film 3");
@@ -42,7 +42,7 @@ public class MovieManagerTest {
 
     @Test
     public void ArrayLongerThanLimit() {
-        MovieManager manager = new MovieManager();
+        ru.netology.qi.MovieManager manager = new ru.netology.qi.MovieManager();
         manager.add("Film 1");
         manager.add("Film 2");
         manager.add("Film 3");
@@ -64,7 +64,7 @@ public class MovieManagerTest {
 
     @Test
     public void listingLatestAddedMoviesInReverseOrder() {
-        MovieManager manager = new MovieManager();
+        ru.netology.qi.MovieManager manager = new ru.netology.qi.MovieManager();
         manager.add("Film 1");
         manager.add("Film 2");
         manager.add("Film 3");
@@ -79,7 +79,7 @@ public class MovieManagerTest {
 
     @Test
     public void LengthArrayEqualLimitInReverseOrder() {
-        MovieManager manager = new MovieManager();
+        ru.netology.qi.MovieManager manager = new ru.netology.qi.MovieManager();
         manager.add("Film 1");
         manager.add("Film 2");
         manager.add("Film 3");
@@ -101,7 +101,7 @@ public class MovieManagerTest {
 
     @Test
     public void OverLimitInReverseOrder() {
-        MovieManager manager = new MovieManager(10);
+        ru.netology.qi.MovieManager manager = new ru.netology.qi.MovieManager(10);
 
         manager.add("Film 1");
         manager.add("Film 2");
